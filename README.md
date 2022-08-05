@@ -39,4 +39,32 @@ AI 융합프로젝트 교육사업의 결과로 "인공지능 기반  김 수확
 
 
 
+1. Download Mobius_Docker from KETI's git repository
+
+sudo git clone https://github.com/IoTKETI/Mobius_Docker.git
+cd Mobius_Docker
+2. Execute "install.sh"
+
+sudo ./instatll.sh
+3. Execute "run.sh"
+
+sudo ./run.sh
+4. Test using cURL
+
+sudo ./test.sh
+You can follows below commands for each objective
+
+Stop mobius docker containers 
+"sudo ./stop.sh"
+
+Remove mobius docker containers
+"sudo ./remove.sh"
+
+Check status of mobius docker containers
+"sudo ./status.sh"
+
+Show logs of mobius docker containers
+"sudo ./logs.sh"
+
+
 
