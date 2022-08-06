@@ -1,4 +1,4 @@
-version: '2.2'
+version: '3.3'
 
 services:
 
@@ -33,17 +33,14 @@ services:
     expose:
       - "8081"
     command: "node mobius"
-    depends_on:
-            db:
-                condition: service_healthy
+
  mqtt:
     image: eclipse-mosquitto:latest
     ports:
       - 1883:1883
     network_mode: "host"
     volumes:
-      - ./etc/mosquitto:/etc/mosquitto:ro
-      - ./var/log/mosquitto:/var/log/mosquitto:rw
-    depends_on:
-            db:
-                condition: service_healthy
+      - ./config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./data:/mosquitto/data
+      - ./log:/mosquitto/log
+
