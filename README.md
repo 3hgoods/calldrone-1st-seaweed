@@ -38,7 +38,7 @@ AI 융합프로젝트 교육사업의 결과로 "인공지능 기반  김 수확
                            초분광시스템 구축지원 등
 
 
-
+# docker 기반 mobius 설치
 1. Download Mobius_Docker from KETI's git repository
 
 $sudo git clone https://github.com/3hgoods/callrone-1st-worklab.git
@@ -47,8 +47,8 @@ $mkdir config
 $mkdir data
 $mkdir log
 
-# 환경 설정 파일 작성
-# 자동 개행 방식을 CR+LF가 아니라 LF로 저장해야 오류가 발생하지 않음
+- 환경 설정 파일 작성
+- 자동 개행 방식을 CR+LF가 아니라 LF로 저장해야 오류가 발생하지 않음
 $ nano ./config/mosquitto.conf
 persistence false
 allow_anonymous true
