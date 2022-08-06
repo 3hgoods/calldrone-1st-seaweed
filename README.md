@@ -41,18 +41,35 @@ AI 융합프로젝트 교육사업의 결과로 "인공지능 기반  김 수확
 
 1. Download Mobius_Docker from KETI's git repository
 
-sudo git clone https://github.com/3hgoods/callrone-1st-worklab.git
-cd callrone-1st-worklab
-chmod +x install.sh
+$sudo git clone https://github.com/3hgoods/callrone-1st-worklab.git
+$cd callrone-1st-worklab
+$mkdir config
+$mkdir data
+$mkdir log
+
+# 환경 설정 파일 작성
+# 자동 개행 방식을 CR+LF가 아니라 LF로 저장해야 오류가 발생하지 않음
+$ nano ./config/mosquitto.conf
+persistence false
+allow_anonymous true
+connection_messages true
+log_type all
+listener 1883
+
+$chmod +x install.sh
+
 2. Execute "install.sh"
+$sudo ./instatll.sh
 
-sudo ./instatll.sh
 3. Execute "run.sh"
-chmod +x run.sh
-sudo ./run.sh
-4. Test using cURL
+$chmod +x run.sh
+$sudo ./run.sh
 
-sudo ./test.sh
+4. Test using cURL
+$sudo ./test.sh
+
+
+
 You can follows below commands for each objective
 
 Stop mobius docker containers 
