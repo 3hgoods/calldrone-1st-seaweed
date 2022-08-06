@@ -71,4 +71,6 @@ Show logs of mobius docker containers
 "sudo ./logs.sh"
 
 
+#etc
+https://velog.io/@seunghwanly/%ED%86%B5%ED%95%A9%EC%84%A4%EC%B9%98-%EB%B0%8F-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0
 
