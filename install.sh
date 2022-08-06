@@ -18,6 +18,11 @@ sudo npm install
 
 cd ..
 
+mkdir config
+mkdir data
+mkdir log
+cp mosquitto.conf ./config
+
 sudo docker-compose up --no-start
 
 echo -e "\n===========Result of Mobius docker install==============\n"
