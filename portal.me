@@ -1,0 +1,48 @@
+
+
+
+# apt repository 에 설치하고자 하는 nginx 버전 추가 
+# ubuntu 버전 (18.04: bionic, 16.04: xenial)
+sudo touch /etc/apt/sources.list.d/nginx.list
+echo "deb https://nginx.org/packages/ubuntu/ focal nginx" | sudo tee -a /etc/apt/sources.list.d/nginx.list
+echo "deb-src https://nginx.org/packages/ubuntu/ focal nginx"| sudo tee -a /etc/apt/sources.list.d/nginx.list
+
+# 인증 키 등록
+wget http://nginx.org/keys/nginx_signing.key
+sudo apt-key add nginx_signing.key
+
+# 저장소 업데이트
+sudo apt-get update
+
+# nginx 설치
+sudo apt-get install nginx
+
+
+1. MongoDB에서 admin 계정 만들기 https://ijeee.tistory.com/12
+
+admin Database에서 createUser 명령어로 admin 계정을 만든다. 계정이름은 admin이 아니어도 상관없음
+
+use admin
+
+db.createUser(
+  {
+    user: "admin",
+    pwd: "abc123",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  }
+)
+
+use admin
+
+db.createUser(
+  {
+    user: "h1",
+    pwd: "1",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  }
+)
+
+
+
+ $ mongo -u "h1" -p --authenticationDatabase "admin"
+ 
