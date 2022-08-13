@@ -8,6 +8,8 @@ sudo apt-get install -y npm
 
 sudo curl -L https://github.com/docker/compose/releases/download/1.3.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 
+# ref https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-install-Docker-and-docker-compose-on-Ubuntu
+
 sudo chmod +x /usr/local/bin/docker-compose
 
 git clone https://github.com/IoTKETI/Mobius.git
