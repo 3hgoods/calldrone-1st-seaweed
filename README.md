@@ -45,6 +45,10 @@ $sudo git clone https://github.com/3hgoods/callrone-1st-worklab.git
 $cd callrone-1st-worklab
 $chmod +x *.sh
 
+
+도커버전 확인
+ref https://runebook.dev/ko/docs/docker/compose/compose-file/compose-versioning/index
+
 2. Execute "install.sh"
 $sudo ./instatll.sh
 
