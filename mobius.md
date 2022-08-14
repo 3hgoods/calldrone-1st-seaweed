@@ -4,7 +4,16 @@ https://github-wiki-see.page/m/IoTKETI/Mobius/wiki/Mobius_v2.0.0_KR_Linux
 
 
 로트계정 1234
+
+
 https://swpfun.tistory.com/701
+
+
+
+http://203.253.128.161:7575
+
+
+
 
 
 
