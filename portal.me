@@ -1,5 +1,18 @@
 
 
+echo "deb http://security.ubuntu.com/ubuntu impish-security main" | sudo tee /etc/apt/sources.list.d/impish-security.list
+sudo apt-get update
+sudo apt-get install libssl1.1
+
+
+
+
+
+
+
+
+----------------------
+
 
 # apt repository 에 설치하고자 하는 nginx 버전 추가 
 # ubuntu 버전 (18.04: bionic, 16.04: xenial)
