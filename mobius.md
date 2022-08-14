@@ -3,6 +3,10 @@
 https://github-wiki-see.page/m/IoTKETI/Mobius/wiki/Mobius_v2.0.0_KR_Linux
 
 
+로트계정 1234
+https://swpfun.tistory.com/701
+
+
 
 https://github.com/zerover0/projects/blob/master/mobius/mobius_yellow_turtle_2.3.4_install_on_ubuntu_14.04.md
 
