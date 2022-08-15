@@ -13,7 +13,9 @@ $ sudo su
 mysql -u root -p
 Enter password:(엔터)
 mysql> use mysql;
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'pw1234';
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pw1234';
+(mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'pw1234'; x)
+
 mysql> flush privileges;
 mysql> exit;
 
