@@ -128,10 +128,25 @@ https://github.com/seunghwanly/mobius-docker/tree/main/mobius/mobius-2.4.36
 ``` 
 
 
+## DB Connection Error
 
+mobius를 구동할때 db연결에서 에러가 발생하는 경우
+``` 
+[db.connect] No Connection
 
+``` 
+### checklist
+- [ ] Check if the `mysql` is running, in this repo, the basic code runs at `localhost:3306`
+- [ ] If you are using MacOS and using `homebrew`, don't be confused you might be using both daemon and mysql simultaneously
+- [ ] Check if the `root`'s `plugin` is set to `caching_sha2_password`, update to `mysql_native_password`
+- [ ] Lastly, check `conf.json` file if it is updated properly
 
-
+### Check Network
+- in MacOS
+``` bash
+netstat -anv | grep LISTEN
+```
+<img width="453" alt="스크린샷 2022-01-16 오후 3 40 41" src="https://user-images.githubusercontent.com/22142225/149650094-63f316d1-5455-435a-81b5-bffc750f02fd.png">
 
 
 sudo service mysql restart
