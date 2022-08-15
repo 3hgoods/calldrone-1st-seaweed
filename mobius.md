@@ -2,10 +2,13 @@
 # install mobius on ubuntu 22.04
 
 # mysql -
+``` 
 sudo apt install mysql-server mysql-clients
 sudo service mysql status
+``` 
 
-##비번 잃어버렸을때 /초기 비번 설정할 때
+### 비번 잃어버렸을때 /초기 비번 설정할 때
+``` 
 $ sudo su
 mysql -u root -p
 Enter password:(엔터)
@@ -17,9 +20,11 @@ mysql> exit;
 #mysql -u root -p         (루트개정 주의 sudo mysql –u root –p)
 Enter password:(pw1234)
 
+``` 
 ref https://freestrokes.tistory.com/43
 
-# mobius
+### mobius
+``` 
 sudo apt install npm
 sudo apt install nodejs
 
@@ -30,8 +35,10 @@ npm install
 vi mobius.js
 global.usesemanticbroker    = '112.187.67.20'; --> IP번호
 
-# db
+``` 
 
+### db
+``` 
 cd mobius
 ls 
   ... mobiusdb.sql 
@@ -73,8 +80,10 @@ mysql> SHOW TABLES;
 | tsi                |
 +--------------------+
 25 rows in set (0.01 sec)
+``` 
 
-# MQTT
+### MQTT
+``` 
 $ sudo apt install mosquitto
 $ sudo apt install mosquitto-clients
 $ mosquitto -v
@@ -82,11 +91,11 @@ $ mosquitto -v
 #TEST
 $mosquitto_sub -h localhost -t /mytopic/1 -m "Hello MQTT test"
 $mosquitto_pub -h localhost -t /mytopic/1 -m "Hello MQTT test"
+``` 
 
 
-
-# mobius 구동
-
+### mobius 구동
+``` 
 db설정, mqtt 포트번호 설정
 
 $ vi conf.json            (이 파일은 mobius.js 파일고 같은 경로에) 
@@ -95,8 +104,10 @@ $ vi conf.json            (이 파일은 mobius.js 파일고 같은 경로에)
 	"dbpass":	"pw1234"
 }
 $ node mobius.js
+``` 
 
-# 인용
+### 인용
+``` 
 https://github-wiki-see.page/m/IoTKETI/Mobius/wiki/Mobius_v2.0.0_KR_Linux
 https://swpfun.tistory.com/701
 http://203.253.128.161:7575
@@ -106,14 +117,15 @@ https://www.notion.so/seunghwanly/Mobius-Guideline-5915345348974cee92933db99104b
 https://velog.io/@seunghwanly/Linux-%ED%99%98%EA%B2%BD
 https://velog.io/@hsw1606/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%97%90-MySQL-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EA%B3%84%EC%A0%95-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0
 https://www.jopenbusiness.com/mediawiki/Mobius
+``` 
 
 
 
-
-# mobius docker 사용예
-
+## mobius docker 사용예
+``` 
 https://github.com/seunghwanly/mobius-docker/tree/main/mobius/mobius-2.4.36
 
+``` 
 
 
 
