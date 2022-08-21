@@ -75,7 +75,13 @@ int main (void)
 
 
 ### nCube-Thyme-Nodejs 설치
+
+```
 $ git clone https://github.com/IoTKETI/nCube-Thyme-Nodejs.git
+$ cd nCube-Thyme-Nodejs 
+$ npm install
+$ node thyme.js
+```
 
 
 
