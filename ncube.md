@@ -7,7 +7,7 @@
 
 
 
-### 라즈베리파이에 nCube Thyme 설치
+## 라즈베리파이에 nCube Thyme 설치
 https://usermanual.wiki/Document/UserGuidenCubeThymeNodejsv200KR.256947802/view
 
 ```
@@ -32,6 +32,50 @@ v12.22.12
 $ npm -v
 7.5.2
 ```
+
+### wiringPi를 설치
+'''
+git clone https://github.com/WiringPi/WiringPi.git
+cd WiringPi/
+./build
+$ gpio -v
+gpio version: 2.70
+```
+ref https://lunasword.tistory.com/42
+
+run.sh
+```
+gcc -o gpio-led gpio-led.c -lwiringPi
+./gpio-led
+```
+
+gpio-led.c
+```
+#include <stdio.h>
+#include <wiringPi.h>
+#define LED1 4 // BCM_GPIO 23
+int main (void)
+{
+  if (wiringPiSetup () == -1)
+  return 1 ;
+  pinMode (LED1, OUTPUT) ;
+  for (;;)
+  {
+    digitalWrite (LED1, 1) ; // LED ON
+    delay (1000) ; // delay_1S
+    digitalWrite (LED1, 0) ; // LED OFF
+    delay (1000) ; // delay_1S
+  }
+  return 0 ;
+
+}
+```
+
+
+
+### nCube-Thyme-Nodejs 설치
+$ git clone https://github.com/IoTKETI/nCube-Thyme-Nodejs.git
+
 
 
 
