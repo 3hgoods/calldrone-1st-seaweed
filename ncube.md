@@ -34,7 +34,8 @@ $ npm -v
 ```
 
 ### wiringPi를 설치
-'''
+
+```
 git clone https://github.com/WiringPi/WiringPi.git
 cd WiringPi/
 ./build
