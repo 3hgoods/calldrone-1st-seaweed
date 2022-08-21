@@ -3,7 +3,7 @@
 
 # mysql -
 ``` 
-sudo apt install mysql-server mysql-clients
+sudo apt install mysql-server mysql-client
 sudo service mysql status
 ``` 
 
@@ -91,7 +91,7 @@ $ sudo apt install mosquitto-clients
 $ mosquitto -v
 
 #TEST
-$mosquitto_sub -h localhost -t /mytopic/1 -m "Hello MQTT test"
+$mosquitto_sub -h localhost -t /mytopic/1 
 $mosquitto_pub -h localhost -t /mytopic/1 -m "Hello MQTT test"
 ``` 
 
