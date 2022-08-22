@@ -84,6 +84,13 @@ $ node thyme.js
 ```
 
 
+## Virtual Device 설치
+```
+https://youtu.be/kyCk6EZ0W4U?list=PL-ZgPBFZJJmmqbv4PvfCoLNVz40nKsGzZ
+https://github.com/IoTKETI/oneM2M-Device_Simulator
+https://github.com/IoTKETI/oneM2M-Application-AndroidSample
+
+```
 
 ### ref
 ```
