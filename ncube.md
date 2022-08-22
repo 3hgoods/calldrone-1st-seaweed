@@ -94,6 +94,11 @@ https://youtu.be/kyCk6EZ0W4U?list=PL-ZgPBFZJJmmqbv4PvfCoLNVz40nKsGzZ
 ```
 
 
+```
+ppa/python issue : https://geminihoroscope.tistory.com/123
+
+```
+
 
 
 
