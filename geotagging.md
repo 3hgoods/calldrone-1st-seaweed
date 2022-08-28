@@ -14,4 +14,13 @@ REDtoolbox software
 https://www.youtube.com/watch?v=sbPNGEE0m04
 
 
+
+```
+
+### geotagger device
+```
+https://www.photoproshop.com/Camera-Accessories/GPS-Receiver-for-Nikon-and-Canon/di-gps-geotagger-eco-prosummer-m.html?language=en
+
+
+
 ```
